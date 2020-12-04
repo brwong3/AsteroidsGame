@@ -1,6 +1,6 @@
 Star[] nightSky = new Star[100];
 Spaceship spaceship = new Spaceship();
-ArrayList <Asteroid> Asteroids = new ArrayList <Asteroid>();
+ArrayList <Asteroid> AsteroidsGroup = new ArrayList <Asteroid>();
 public void setup() 
 {
   size(800,600);
@@ -11,7 +11,7 @@ public void setup()
   }
   for(int i = 0; i < 5; i++) {
     Asteroid asteroids = new Asteroid();
-    Asteroids.add(i,asteroids);
+    AsteroidsGroup.add(i,asteroids);
   }
 }
 private int numOfAsteroids = 5;
@@ -25,13 +25,13 @@ public void draw()
   spaceship.move();
   
   for(int i = 0; i < numOfAsteroids; i++) {
-    if(dist((float)spaceship.myCenterX,(float)spaceship.myCenterY, (float)Asteroids.get(i).myCenterX,(float)Asteroids.get(i).myCenterY) <= 20) {
-       Asteroids.remove(i);
+    if(dist((float)spaceship.myCenterX,(float)spaceship.myCenterY, (float)AsteroidsGroup.get(i).myCenterX,(float)AsteroidsGroup.get(i).myCenterY) <= 20) {
+       AsteroidsGroup.remove(i);
        numOfAsteroids --;
     }
     else {
-      Asteroids.get(i).show();
-      Asteroids.get(i).move();
+      AsteroidsGroup.get(i).show();
+      AsteroidsGroup.get(i).move();
     }
   }
 }
