@@ -1,6 +1,6 @@
 Star[] nightSky = new Star[100];
 Spaceship spaceship = new Spaceship();
-ArrayList <Asteroids> Asteroids = new ArrayList <Asteroids>();
+ArrayList <Asteroid> Asteroids = new ArrayList <Asteroid>();
 public void setup() 
 {
   size(800,600);
@@ -10,7 +10,7 @@ public void setup()
     
   }
   for(int i = 0; i < 5; i++) {
-    Asteroids asteroids = new Asteroids();
+    Asteroid asteroids = new Asteroid();
     Asteroids.add(i,asteroids);
   }
 }
