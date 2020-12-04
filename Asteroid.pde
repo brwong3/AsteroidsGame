@@ -1,7 +1,7 @@
-public class Asteroids extends Floater {
+public class Asteroid extends Floater {
   private int scaleFactor = (int)(Math.random() * 2 + 4);
   private double rotSpeed;
-  public Asteroids() {
+  public Asteroid() {
     corners = 6;  //the number of corners, a triangular floater has 3   
     xCorners = new int[corners];   
     yCorners = new int [corners];   
