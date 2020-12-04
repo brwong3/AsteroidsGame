@@ -17,7 +17,7 @@ public class Asteroid extends Floater {
     yCorners[4] = 8  * scaleFactor;
     xCorners[5] = - 5  * scaleFactor;
     yCorners[5] = 0;
-    myColor = color(128,128,128);   
+    myColor = 128; 
     myCenterX = Math.random() * 800;
     myCenterY = Math.random() * 600;//holds center coordinates   
     myXspeed = Math.random() * 3 - 1; 
