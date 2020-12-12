@@ -91,7 +91,7 @@ public void draw()
   if(health <= 0) {
    textSize(100);
    fill(255,0,0);
-   text("GAME OVER", 110 ,340);
+   text("GAME OVER", 100 ,340);
    health = 0;
    numOfBullets = 0;
  }
